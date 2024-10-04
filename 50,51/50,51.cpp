@@ -3,10 +3,12 @@
 
 using namespace std;
 
-double h(const double x, const double y);
+double h(const double x, const double y); // прототип
 
 int main() {
+
     double s, t;
+
     cout << " s = "; cin >> s;
     cout << " t = "; cin >> t;
 
@@ -14,12 +16,9 @@ int main() {
 
     cout << " c = " << c << endl;
 
-    int q = sum(s, t);
-    cout << " q = " << q << endl;
-
     return 0;
 }
 
 double h(const double x, const double y) {
-    return (x * x + y * y) / (1 + x * x + y * y);
+    return (x * x + y * y) / (1 + x * x + y * y); // визначення
 }
